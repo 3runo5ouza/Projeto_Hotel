@@ -67,21 +67,21 @@
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.clienteToolStripMenuItem.Text = "&Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // funcionarioToolStripMenuItem
             // 
             this.funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
-            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.funcionarioToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.funcionarioToolStripMenuItem.Text = "&Funcionário";
             this.funcionarioToolStripMenuItem.Click += new System.EventHandler(this.funcionarioToolStripMenuItem_Click);
             // 
             // quartoToolStripMenuItem
             // 
             this.quartoToolStripMenuItem.Name = "quartoToolStripMenuItem";
-            this.quartoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quartoToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.quartoToolStripMenuItem.Text = "&Quarto";
             this.quartoToolStripMenuItem.Click += new System.EventHandler(this.quartoToolStripMenuItem_Click);
             // 

@@ -15,12 +15,13 @@ namespace Projeto_Hotel
             InitializeComponent();
         }
 
+        public string stringConexao = "";
 
         // Menu CADASTRO
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fCadastrarCliente form = new fCadastrarCliente();
-            form.ShowDialog(this);
+            fCadastrarCliente form = new fCadastrarCliente(this);
+            form.ShowDialog();
         }
 
         private void funcionarioToolStripMenuItem_Click(object sender, EventArgs e)
