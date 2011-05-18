@@ -13,6 +13,10 @@ namespace Projeto_Hotel
         public fPrincipal()
         {
             InitializeComponent();
+
+            //BKM Código para teste da form. RETIRAR
+            fCadastrarFuncionario form = new fCadastrarFuncionario();
+            form.ShowDialog(this);
         }
 
         public string stringConexao = "";
