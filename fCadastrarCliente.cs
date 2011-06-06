@@ -158,11 +158,11 @@ namespace Projeto_Hotel
             }
         }
         
-        private void btCancelar_Click(object sender, EventArgs e)
+       /* private void btCancelar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Os dados não serão salvos, deseja fechar mesmo assim?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 this.Close();
-        }
+        }*/
 
        
 
