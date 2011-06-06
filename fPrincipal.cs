@@ -10,6 +10,7 @@ namespace Projeto_Hotel
 {
     public partial class fPrincipal : Form
     {
+        public string stringConexao = "Data Source = IFSP-CJO\\MSSQLSERVER1; Initial Catalog = banco_hotel; Integrated Security = SSPI";
         public fPrincipal()
         {
             InitializeComponent();
@@ -19,8 +20,8 @@ namespace Projeto_Hotel
         // Menu CADASTRO
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fCadastrarCliente form = new fCadastrarCliente();
-            form.ShowDialog(this);
+            fCadastrarCliente form = new fCadastrarCliente(this);
+            form.ShowDialog();
         }
 
         private void funcionarioToolStripMenuItem_Click(object sender, EventArgs e)

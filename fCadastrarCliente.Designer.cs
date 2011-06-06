@@ -43,7 +43,7 @@
             this.lbEstadoCivil = new System.Windows.Forms.Label();
             this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.lbLogradouro = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbLogradouro = new System.Windows.Forms.ComboBox();
             this.lbEnereco = new System.Windows.Forms.Label();
             this.tbEndereco = new System.Windows.Forms.TextBox();
             this.lbComplemento = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.lbBairro = new System.Windows.Forms.Label();
             this.tbBairro = new System.Windows.Forms.TextBox();
             this.lbCep = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.msbCep = new System.Windows.Forms.MaskedTextBox();
             this.lbEstado = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.lbCidade = new System.Windows.Forms.Label();
@@ -228,21 +228,21 @@
             this.lbLogradouro.TabIndex = 15;
             this.lbLogradouro.Text = "Logradouro:";
             // 
-            // comboBox1
+            // cmbLogradouro
             // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbLogradouro.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbLogradouro.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbLogradouro.FormattingEnabled = true;
+            this.cmbLogradouro.Items.AddRange(new object[] {
             "Avenida",
             "Rodovia",
             "Rua",
             "Travessa",
             "Viela"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(93, 21);
-            this.comboBox1.TabIndex = 16;
+            this.cmbLogradouro.Location = new System.Drawing.Point(3, 25);
+            this.cmbLogradouro.Name = "cmbLogradouro";
+            this.cmbLogradouro.Size = new System.Drawing.Size(93, 21);
+            this.cmbLogradouro.TabIndex = 16;
             // 
             // lbEnereco
             // 
@@ -317,14 +317,14 @@
             this.lbCep.TabIndex = 25;
             this.lbCep.Text = "CEP:";
             // 
-            // maskedTextBox1
+            // msbCep
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(3, 65);
-            this.maskedTextBox1.Mask = "00,000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(93, 20);
-            this.maskedTextBox1.TabIndex = 26;
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.msbCep.Location = new System.Drawing.Point(3, 65);
+            this.msbCep.Mask = "00,000-00";
+            this.msbCep.Name = "msbCep";
+            this.msbCep.Size = new System.Drawing.Size(93, 20);
+            this.msbCep.TabIndex = 26;
+            this.msbCep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbEstado
             // 
@@ -427,8 +427,8 @@
             this.pnEndereco.Controls.Add(this.tbEndereco);
             this.pnEndereco.Controls.Add(this.lbEstado);
             this.pnEndereco.Controls.Add(this.lbEnereco);
-            this.pnEndereco.Controls.Add(this.maskedTextBox1);
-            this.pnEndereco.Controls.Add(this.comboBox1);
+            this.pnEndereco.Controls.Add(this.msbCep);
+            this.pnEndereco.Controls.Add(this.cmbLogradouro);
             this.pnEndereco.Controls.Add(this.lbCep);
             this.pnEndereco.Controls.Add(this.lbLogradouro);
             this.pnEndereco.Controls.Add(this.tbBairro);
@@ -579,6 +579,7 @@
             this.btCancelar.TabIndex = 38;
             this.btCancelar.Text = "&Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // fCadastrarCliente
             // 
@@ -627,7 +628,7 @@
         private System.Windows.Forms.Label lbEstadoCivil;
         private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label lbLogradouro;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbLogradouro;
         private System.Windows.Forms.Label lbEnereco;
         private System.Windows.Forms.TextBox tbEndereco;
         private System.Windows.Forms.Label lbComplemento;
@@ -637,7 +638,7 @@
         private System.Windows.Forms.Label lbBairro;
         private System.Windows.Forms.TextBox tbBairro;
         private System.Windows.Forms.Label lbCep;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox msbCep;
         private System.Windows.Forms.Label lbEstado;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Label lbCidade;
