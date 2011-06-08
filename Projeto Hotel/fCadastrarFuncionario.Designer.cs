@@ -65,7 +65,7 @@
             this.tbBairro = new System.Windows.Forms.TextBox();
             this.tbCidade = new System.Windows.Forms.TextBox();
             this.tbEstado = new System.Windows.Forms.TextBox();
-            this.b = new System.Windows.Forms.TextBox();
+            this.tbCep = new System.Windows.Forms.TextBox();
             this.tbPais = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -206,7 +206,7 @@
             this.mtbCpf.Name = "mtbCpf";
             this.mtbCpf.Size = new System.Drawing.Size(85, 20);
             this.mtbCpf.TabIndex = 1;
-            this.mtbCpf.Text = "11111111111";
+            this.mtbCpf.Text = "11111111911";
             // 
             // mtbRg
             // 
@@ -215,6 +215,7 @@
             this.mtbRg.Name = "mtbRg";
             this.mtbRg.Size = new System.Drawing.Size(97, 20);
             this.mtbRg.TabIndex = 2;
+            this.mtbRg.Text = "321653212";
             // 
             // mtbTelefone
             // 
@@ -357,6 +358,7 @@
             this.tbRua.Name = "tbRua";
             this.tbRua.Size = new System.Drawing.Size(241, 20);
             this.tbRua.TabIndex = 11;
+            this.tbRua.Text = "Augusta";
             // 
             // tbNumero
             // 
@@ -364,6 +366,7 @@
             this.tbNumero.Name = "tbNumero";
             this.tbNumero.Size = new System.Drawing.Size(85, 20);
             this.tbNumero.TabIndex = 12;
+            this.tbNumero.Text = "168";
             // 
             // tbComplemento
             // 
@@ -371,6 +374,7 @@
             this.tbComplemento.Name = "tbComplemento";
             this.tbComplemento.Size = new System.Drawing.Size(154, 20);
             this.tbComplemento.TabIndex = 13;
+            this.tbComplemento.Text = "Comprepentu";
             // 
             // tbBairro
             // 
@@ -378,6 +382,7 @@
             this.tbBairro.Name = "tbBairro";
             this.tbBairro.Size = new System.Drawing.Size(100, 20);
             this.tbBairro.TabIndex = 14;
+            this.tbBairro.Text = "fracalanza";
             // 
             // tbCidade
             // 
@@ -385,6 +390,7 @@
             this.tbCidade.Name = "tbCidade";
             this.tbCidade.Size = new System.Drawing.Size(100, 20);
             this.tbCidade.TabIndex = 15;
+            this.tbCidade.Text = "cj";
             // 
             // tbEstado
             // 
@@ -392,20 +398,23 @@
             this.tbEstado.Name = "tbEstado";
             this.tbEstado.Size = new System.Drawing.Size(100, 20);
             this.tbEstado.TabIndex = 17;
+            this.tbEstado.Text = "sp";
             // 
-            // b
+            // tbCep
             // 
-            this.b.Location = new System.Drawing.Point(175, 363);
-            this.b.Name = "b";
-            this.b.Size = new System.Drawing.Size(100, 20);
-            this.b.TabIndex = 16;
+            this.tbCep.Location = new System.Drawing.Point(175, 363);
+            this.tbCep.Name = "tbCep";
+            this.tbCep.Size = new System.Drawing.Size(100, 20);
+            this.tbCep.TabIndex = 16;
+            this.tbCep.Text = "12460000";
             // 
             // tbPais
             // 
-            this.tbPais.Location = new System.Drawing.Point(19, 448);
+            this.tbPais.Location = new System.Drawing.Point(12, 448);
             this.tbPais.Name = "tbPais";
             this.tbPais.Size = new System.Drawing.Size(100, 20);
             this.tbPais.TabIndex = 18;
+            this.tbPais.Text = "brazil";
             // 
             // fCadastrarFuncionario
             // 
@@ -413,7 +422,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(388, 496);
             this.Controls.Add(this.tbPais);
-            this.Controls.Add(this.b);
+            this.Controls.Add(this.tbCep);
             this.Controls.Add(this.tbEstado);
             this.Controls.Add(this.tbCidade);
             this.Controls.Add(this.tbBairro);
@@ -497,7 +506,7 @@
         private System.Windows.Forms.TextBox tbBairro;
         private System.Windows.Forms.TextBox tbCidade;
         private System.Windows.Forms.TextBox tbEstado;
-        private System.Windows.Forms.TextBox b;
+        private System.Windows.Forms.TextBox tbCep;
         private System.Windows.Forms.TextBox tbPais;
     }
 }
