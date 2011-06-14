@@ -15,11 +15,12 @@ namespace Projeto_Hotel
             InitializeComponent();
 
             //BKM Código para teste da form. RETIRAR
-            fCadastrarFuncionario form = new fCadastrarFuncionario();
-            form.ShowDialog(this);
+            fConsultarFuncionario f = new fConsultarFuncionario();
+            //fCadastrarFuncionario f = new fCadastrarFuncionario();
+            f.ShowDialog(this);
         }
 
-        public string stringConexao = "";
+        public static string STRING_CONEXAO = @"Data Source=.\SQLEXPRESS; Initial Catalog = banco_hotel; Integrated Security = SSPI";
 
         // Menu CADASTRO
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)

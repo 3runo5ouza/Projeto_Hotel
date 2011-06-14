@@ -252,6 +252,7 @@
             this.bCancelar.TabIndex = 20;
             this.bCancelar.Text = "C&ancelar";
             this.bCancelar.UseVisualStyleBackColor = true;
+            this.bCancelar.Click += new System.EventHandler(this.bCancelar_Click);
             // 
             // bConfirmar
             // 
@@ -261,11 +262,12 @@
             this.bConfirmar.TabIndex = 19;
             this.bConfirmar.Text = "C&onfirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
+            this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click);
             // 
             // mtbTelefone
             // 
             this.mtbTelefone.Location = new System.Drawing.Point(12, 219);
-            this.mtbTelefone.Mask = "1111111111";
+            this.mtbTelefone.Mask = "(99) 0000-0000";
             this.mtbTelefone.Name = "mtbTelefone";
             this.mtbTelefone.Size = new System.Drawing.Size(100, 20);
             this.mtbTelefone.TabIndex = 7;

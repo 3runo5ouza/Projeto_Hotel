@@ -24,7 +24,6 @@ namespace Projeto_Hotel
 
         private void bConfirmar_Click(object sender, EventArgs e)
         {
-
             using (SqlConnection conexao = new SqlConnection(STRING_CONEXAO))
             {
                 try

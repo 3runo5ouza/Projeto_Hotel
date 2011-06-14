@@ -23,7 +23,7 @@ namespace Projeto_Hotel
         public fCadastrarCliente(fPrincipal principal)
         {
             InitializeComponent();
-            stringConexao = principal.stringConexao;
+            stringConexao = fPrincipal.STRING_CONEXAO;
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
