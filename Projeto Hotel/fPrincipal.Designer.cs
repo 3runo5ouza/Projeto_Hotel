@@ -141,6 +141,7 @@
             this.MainMenuStrip = this.msPrincipal;
             this.Name = "fPrincipal";
             this.Text = "Hotel Beta";
+            this.Load += new System.EventHandler(this.fPrincipal_Load);
             this.msPrincipal.ResumeLayout(false);
             this.msPrincipal.PerformLayout();
             this.ResumeLayout(false);

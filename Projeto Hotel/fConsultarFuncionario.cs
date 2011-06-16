@@ -12,7 +12,6 @@ namespace Projeto_Hotel
 {
     public partial class fConsultarFuncionario : Form
     {
-        //const string STRING_CONEXAO = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\banco_hotel.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
         const string STRING_CONEXAO = @"Data Source=.\SQLEXPRESS;Initial Catalog = banco_hotel;Integrated Security=True;";
 
         DataSet ds = new DataSet();

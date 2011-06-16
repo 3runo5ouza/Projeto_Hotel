@@ -15,9 +15,9 @@ namespace Projeto_Hotel
             InitializeComponent();
 
             //BKM Código para teste da form. RETIRAR
-            fConsultarFuncionario f = new fConsultarFuncionario();
+            //fConsultarFuncionario f = new fConsultarFuncionario();
             //fCadastrarFuncionario f = new fCadastrarFuncionario();
-            f.ShowDialog(this);
+           
         }
 
         public static string STRING_CONEXAO = @"Data Source=.\SQLEXPRESS; Initial Catalog = banco_hotel; Integrated Security = SSPI";
@@ -73,6 +73,14 @@ namespace Projeto_Hotel
         {
             fEstadia form = new fEstadia();
             form.ShowDialog(this);
+        }
+
+        private void fPrincipal_Load(object sender, EventArgs e)
+        {
+            fLogin f = new fLogin();
+            f.ShowDialog(this);
+            if (!f.senhaCorreta) { }
+                this.Close();
         }
 
 

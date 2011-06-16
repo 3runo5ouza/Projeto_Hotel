@@ -30,7 +30,7 @@
         {
             this.o = new System.Windows.Forms.Button();
             this.tbSenha = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbUsuario = new System.Windows.Forms.TextBox();
             this.lUsuario = new System.Windows.Forms.Label();
             this.lSenha = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -40,9 +40,10 @@
             this.o.Location = new System.Drawing.Point(134, 76);
             this.o.Name = "o";
             this.o.Size = new System.Drawing.Size(75, 23);
-            this.o.TabIndex = 0;
+            this.o.TabIndex = 2;
             this.o.Text = "Entrar";
             this.o.UseVisualStyleBackColor = true;
+            this.o.Click += new System.EventHandler(this.Login_Click);
             // 
             // tbSenha
             // 
@@ -51,13 +52,14 @@
             this.tbSenha.PasswordChar = '*';
             this.tbSenha.Size = new System.Drawing.Size(139, 20);
             this.tbSenha.TabIndex = 1;
+            this.tbSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSenha_KeyPress);
             // 
-            // textBox1
+            // tbUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbUsuario.Location = new System.Drawing.Point(70, 24);
+            this.tbUsuario.Name = "tbUsuario";
+            this.tbUsuario.Size = new System.Drawing.Size(139, 20);
+            this.tbUsuario.TabIndex = 0;
             // 
             // lUsuario
             // 
@@ -84,11 +86,12 @@
             this.ClientSize = new System.Drawing.Size(230, 112);
             this.Controls.Add(this.lSenha);
             this.Controls.Add(this.lUsuario);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.tbSenha);
             this.Controls.Add(this.o);
             this.Name = "fLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.fLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,7 +101,7 @@
 
         private System.Windows.Forms.Button o;
         private System.Windows.Forms.TextBox tbSenha;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbUsuario;
         private System.Windows.Forms.Label lUsuario;
         private System.Windows.Forms.Label lSenha;
     }
