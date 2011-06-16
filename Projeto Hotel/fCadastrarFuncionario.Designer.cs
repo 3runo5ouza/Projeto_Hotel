@@ -59,14 +59,13 @@
             this.lCep = new System.Windows.Forms.Label();
             this.lEstado = new System.Windows.Forms.Label();
             this.lPais = new System.Windows.Forms.Label();
-            this.tbRua = new System.Windows.Forms.TextBox();
-            this.tbNumero = new System.Windows.Forms.TextBox();
-            this.tbComplemento = new System.Windows.Forms.TextBox();
-            this.tbBairro = new System.Windows.Forms.TextBox();
-            this.tbCidade = new System.Windows.Forms.TextBox();
-            this.tbEstado = new System.Windows.Forms.TextBox();
-            this.tbCep = new System.Windows.Forms.TextBox();
-            this.tbPais = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lNome
@@ -206,7 +205,7 @@
             this.mtbCpf.Name = "mtbCpf";
             this.mtbCpf.Size = new System.Drawing.Size(85, 20);
             this.mtbCpf.TabIndex = 1;
-            this.mtbCpf.Text = "11111111911";
+            this.mtbCpf.Text = "11111111111";
             // 
             // mtbRg
             // 
@@ -215,7 +214,6 @@
             this.mtbRg.Name = "mtbRg";
             this.mtbRg.Size = new System.Drawing.Size(97, 20);
             this.mtbRg.TabIndex = 2;
-            this.mtbRg.Text = "321653212";
             // 
             // mtbTelefone
             // 
@@ -227,20 +225,20 @@
             // 
             // bConfirmar
             // 
-            this.bConfirmar.Location = new System.Drawing.Point(640, 240);
+            this.bConfirmar.Location = new System.Drawing.Point(675, 427);
             this.bConfirmar.Name = "bConfirmar";
             this.bConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.bConfirmar.TabIndex = 19;
+            this.bConfirmar.TabIndex = 11;
             this.bConfirmar.Text = "Confirmar";
             this.bConfirmar.UseVisualStyleBackColor = true;
             this.bConfirmar.Click += new System.EventHandler(this.bConfirmar_Click);
             // 
             // bCancelar
             // 
-            this.bCancelar.Location = new System.Drawing.Point(559, 240);
+            this.bCancelar.Location = new System.Drawing.Point(594, 427);
             this.bCancelar.Name = "bCancelar";
             this.bCancelar.Size = new System.Drawing.Size(75, 23);
-            this.bCancelar.TabIndex = 20;
+            this.bCancelar.TabIndex = 16;
             this.bCancelar.Text = "Cancelar";
             this.bCancelar.UseVisualStyleBackColor = true;
             this.bCancelar.Click += new System.EventHandler(this.bCancelar_Click);
@@ -283,7 +281,7 @@
             // lRua
             // 
             this.lRua.AutoSize = true;
-            this.lRua.Location = new System.Drawing.Point(396, 48);
+            this.lRua.Location = new System.Drawing.Point(16, 269);
             this.lRua.Name = "lRua";
             this.lRua.Size = new System.Drawing.Size(27, 13);
             this.lRua.TabIndex = 21;
@@ -292,7 +290,7 @@
             // lNumero
             // 
             this.lNumero.AutoSize = true;
-            this.lNumero.Location = new System.Drawing.Point(653, 48);
+            this.lNumero.Location = new System.Drawing.Point(16, 310);
             this.lNumero.Name = "lNumero";
             this.lNumero.Size = new System.Drawing.Size(44, 13);
             this.lNumero.TabIndex = 22;
@@ -301,7 +299,7 @@
             // lComplemento
             // 
             this.lComplemento.AutoSize = true;
-            this.lComplemento.Location = new System.Drawing.Point(396, 87);
+            this.lComplemento.Location = new System.Drawing.Point(16, 339);
             this.lComplemento.Name = "lComplemento";
             this.lComplemento.Size = new System.Drawing.Size(71, 13);
             this.lComplemento.TabIndex = 23;
@@ -310,7 +308,7 @@
             // lBairro
             // 
             this.lBairro.AutoSize = true;
-            this.lBairro.Location = new System.Drawing.Point(556, 87);
+            this.lBairro.Location = new System.Drawing.Point(16, 367);
             this.lBairro.Name = "lBairro";
             this.lBairro.Size = new System.Drawing.Size(34, 13);
             this.lBairro.TabIndex = 24;
@@ -319,7 +317,7 @@
             // lCidade
             // 
             this.lCidade.AutoSize = true;
-            this.lCidade.Location = new System.Drawing.Point(396, 126);
+            this.lCidade.Location = new System.Drawing.Point(16, 392);
             this.lCidade.Name = "lCidade";
             this.lCidade.Size = new System.Drawing.Size(40, 13);
             this.lCidade.TabIndex = 25;
@@ -328,7 +326,7 @@
             // lCep
             // 
             this.lCep.AutoSize = true;
-            this.lCep.Location = new System.Drawing.Point(556, 126);
+            this.lCep.Location = new System.Drawing.Point(15, 427);
             this.lCep.Name = "lCep";
             this.lCep.Size = new System.Drawing.Size(28, 13);
             this.lCep.TabIndex = 26;
@@ -337,7 +335,7 @@
             // lEstado
             // 
             this.lEstado.AutoSize = true;
-            this.lEstado.Location = new System.Drawing.Point(396, 165);
+            this.lEstado.Location = new System.Drawing.Point(15, 450);
             this.lEstado.Name = "lEstado";
             this.lEstado.Size = new System.Drawing.Size(40, 13);
             this.lEstado.TabIndex = 27;
@@ -346,89 +344,73 @@
             // lPais
             // 
             this.lPais.AutoSize = true;
-            this.lPais.Location = new System.Drawing.Point(396, 211);
+            this.lPais.Location = new System.Drawing.Point(16, 474);
             this.lPais.Name = "lPais";
             this.lPais.Size = new System.Drawing.Size(29, 13);
             this.lPais.TabIndex = 28;
             this.lPais.Text = "País";
             // 
-            // tbRua
+            // textBox1
             // 
-            this.tbRua.Location = new System.Drawing.Point(395, 64);
-            this.tbRua.Name = "tbRua";
-            this.tbRua.Size = new System.Drawing.Size(241, 20);
-            this.tbRua.TabIndex = 11;
-            this.tbRua.Text = "Augusta";
+            this.textBox1.Location = new System.Drawing.Point(15, 285);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 29;
             // 
-            // tbNumero
+            // textBox2
             // 
-            this.tbNumero.Location = new System.Drawing.Point(656, 64);
-            this.tbNumero.Name = "tbNumero";
-            this.tbNumero.Size = new System.Drawing.Size(85, 20);
-            this.tbNumero.TabIndex = 12;
-            this.tbNumero.Text = "168";
+            this.textBox2.Location = new System.Drawing.Point(69, 311);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 30;
             // 
-            // tbComplemento
+            // textBox3
             // 
-            this.tbComplemento.Location = new System.Drawing.Point(395, 103);
-            this.tbComplemento.Name = "tbComplemento";
-            this.tbComplemento.Size = new System.Drawing.Size(154, 20);
-            this.tbComplemento.TabIndex = 13;
-            this.tbComplemento.Text = "Comprepentu";
+            this.textBox3.Location = new System.Drawing.Point(93, 337);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 31;
             // 
-            // tbBairro
+            // textBox4
             // 
-            this.tbBairro.Location = new System.Drawing.Point(555, 103);
-            this.tbBairro.Name = "tbBairro";
-            this.tbBairro.Size = new System.Drawing.Size(100, 20);
-            this.tbBairro.TabIndex = 14;
-            this.tbBairro.Text = "fracalanza";
+            this.textBox4.Location = new System.Drawing.Point(56, 369);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 32;
             // 
-            // tbCidade
+            // textBox5
             // 
-            this.tbCidade.Location = new System.Drawing.Point(395, 142);
-            this.tbCidade.Name = "tbCidade";
-            this.tbCidade.Size = new System.Drawing.Size(100, 20);
-            this.tbCidade.TabIndex = 15;
-            this.tbCidade.Text = "cj";
+            this.textBox5.Location = new System.Drawing.Point(47, 395);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 33;
             // 
-            // tbEstado
+            // textBox6
             // 
-            this.tbEstado.Location = new System.Drawing.Point(395, 181);
-            this.tbEstado.Name = "tbEstado";
-            this.tbEstado.Size = new System.Drawing.Size(100, 20);
-            this.tbEstado.TabIndex = 17;
-            this.tbEstado.Text = "sp";
+            this.textBox6.Location = new System.Drawing.Point(51, 456);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 34;
             // 
-            // tbCep
+            // textBox7
             // 
-            this.tbCep.Location = new System.Drawing.Point(555, 142);
-            this.tbCep.Name = "tbCep";
-            this.tbCep.Size = new System.Drawing.Size(100, 20);
-            this.tbCep.TabIndex = 16;
-            this.tbCep.Text = "12460000";
-            // 
-            // tbPais
-            // 
-            this.tbPais.Location = new System.Drawing.Point(392, 227);
-            this.tbPais.Name = "tbPais";
-            this.tbPais.Size = new System.Drawing.Size(100, 20);
-            this.tbPais.TabIndex = 18;
-            this.tbPais.Text = "brazil";
+            this.textBox7.Location = new System.Drawing.Point(47, 430);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 35;
             // 
             // fCadastrarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 286);
-            this.Controls.Add(this.tbPais);
-            this.Controls.Add(this.tbCep);
-            this.Controls.Add(this.tbEstado);
-            this.Controls.Add(this.tbCidade);
-            this.Controls.Add(this.tbBairro);
-            this.Controls.Add(this.tbComplemento);
-            this.Controls.Add(this.tbNumero);
-            this.Controls.Add(this.tbRua);
+            this.ClientSize = new System.Drawing.Size(787, 496);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lPais);
             this.Controls.Add(this.lEstado);
             this.Controls.Add(this.lCep);
@@ -500,13 +482,12 @@
         private System.Windows.Forms.Label lCep;
         private System.Windows.Forms.Label lEstado;
         private System.Windows.Forms.Label lPais;
-        private System.Windows.Forms.TextBox tbRua;
-        private System.Windows.Forms.TextBox tbNumero;
-        private System.Windows.Forms.TextBox tbComplemento;
-        private System.Windows.Forms.TextBox tbBairro;
-        private System.Windows.Forms.TextBox tbCidade;
-        private System.Windows.Forms.TextBox tbEstado;
-        private System.Windows.Forms.TextBox tbCep;
-        private System.Windows.Forms.TextBox tbPais;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
