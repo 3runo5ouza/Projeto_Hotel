@@ -79,7 +79,7 @@ namespace Projeto_Hotel
         {
             fLogin f = new fLogin();
             f.ShowDialog(this);
-            if (!f.senhaCorreta) { }
+            if (!f.senhaCorreta)
                 this.Close();
         }
 

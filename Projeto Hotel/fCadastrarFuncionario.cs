@@ -30,7 +30,7 @@ namespace Projeto_Hotel
                 {
                     conexao.Open();
                     SqlCommand comandoInclusao = new SqlCommand();
-                    comandoInclusao.CommandText = "Insert into funcionarios values (@nome, @cpf, @rg, @data_nasc, @sexo, @data_admissao, @telefone, @email, @usuario, @senha)";
+                    comandoInclusao.CommandText = "INSERT INTO funcionarios VALUES (@nome, @cpf, @rg, @data_nasc, @sexo, @data_admissao, @telefone, @email, @usuario, @senha)";
                     comandoInclusao.Connection = conexao;
 
                     SqlParameter parametros;

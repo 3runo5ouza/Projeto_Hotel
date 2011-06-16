@@ -27,11 +27,13 @@ namespace Projeto_Hotel
             SqlConnection conexao = new SqlConnection(STRING_CONEXAO);
             SqlDataReader reader = null;
             conexao.Open();
-            SqlCommand comando = new SqlCommand("SELECT nome, senha FROM funcionarios", conexao);
+
+            // Não serão utilizados SqlParameters, pois o comando sql ocorre sem interfência do usuário
+            SqlCommand comando = new SqlCommand("SELECT usuario, senha FROM funcionarios", conexao);
             reader = comando.ExecuteReader();
             while (reader.Read())
             {
-                usuariosSenhas.Add(reader["nome"].ToString(), reader["senha"].ToString());
+                usuariosSenhas.Add(reader["usuario"].ToString(), reader["senha"].ToString());
             }
             reader.Close();
             conexao.Close();
