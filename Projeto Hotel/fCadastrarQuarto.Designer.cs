@@ -125,6 +125,7 @@
             this.tbNumero.Name = "tbNumero";
             this.tbNumero.Size = new System.Drawing.Size(152, 20);
             this.tbNumero.TabIndex = 0;
+            this.tbNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbAndar_KeyPress);
             // 
             // tbValor
             // 
@@ -132,6 +133,7 @@
             this.tbValor.Name = "tbValor";
             this.tbValor.Size = new System.Drawing.Size(152, 20);
             this.tbValor.TabIndex = 2;
+            this.tbValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbValor_KeyPress);
             // 
             // tbAndar
             // 
@@ -139,6 +141,7 @@
             this.tbAndar.Name = "tbAndar";
             this.tbAndar.Size = new System.Drawing.Size(152, 20);
             this.tbAndar.TabIndex = 1;
+            this.tbAndar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbAndar_KeyPress);
             // 
             // cbTipoCama
             // 
@@ -153,7 +156,7 @@
             // 
             // bOk
             // 
-            this.bOk.Location = new System.Drawing.Point(246, 235);
+            this.bOk.Location = new System.Drawing.Point(170, 220);
             this.bOk.Name = "bOk";
             this.bOk.Size = new System.Drawing.Size(75, 23);
             this.bOk.TabIndex = 8;
@@ -165,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 270);
+            this.ClientSize = new System.Drawing.Size(261, 255);
             this.Controls.Add(this.bOk);
             this.Controls.Add(this.cbTipoCama);
             this.Controls.Add(this.tbAndar);
@@ -180,7 +183,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fCadastrarQuarto";
-            this.Text = "fCadastrarQuarto";
+            this.Text = "Cadastrar Quarto";
             this.Load += new System.EventHandler(this.fCadastrarQuarto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

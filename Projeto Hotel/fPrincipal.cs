@@ -13,14 +13,11 @@ namespace Projeto_Hotel
         public fPrincipal()
         {
             InitializeComponent();
-
-            //BKM Código para teste da form. RETIRAR
-            //fConsultarFuncionario f = new fConsultarFuncionario();
-            //fCadastrarFuncionario f = new fCadastrarFuncionario();
            
         }
 
         public static string STRING_CONEXAO = @"Data Source=.\SQLEXPRESS; Initial Catalog = banco_hotel; Integrated Security = SSPI";
+        private string codigoUsuario = "";
 
         // Menu CADASTRO
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,12 +72,16 @@ namespace Projeto_Hotel
             form.ShowDialog(this);
         }
 
+
+        // Carrega tela de login assim que o programa for chamado
         private void fPrincipal_Load(object sender, EventArgs e)
         {
             fLogin f = new fLogin();
             f.ShowDialog(this);
             if (!f.senhaCorreta)
                 this.Close();
+            else
+                codigoUsuario = f.getCodigoUsuario();
         }
 
 

@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -21,6 +16,11 @@ namespace Projeto_Hotel
         const string STRING_CONEXAO = @"Data Source=.\SQLEXPRESS;Initial Catalog = banco_hotel;Integrated Security=True;";
         public bool senhaCorreta = false;
         private string codigoUsuario = "";
+
+        public string getCodigoUsuario()
+        {
+            return codigoUsuario;
+        }
 
         private void fLogin_Load(object sender, EventArgs e)
         {            

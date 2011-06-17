@@ -84,6 +84,30 @@ namespace Projeto_Hotel
 
             }
         }
+
+        private void tbAndar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsNumber(e.KeyChar) && !(e.KeyChar == 8)) || (e.Equals(Keys.Control)))
+            {
+                e.Handled = true;
+            } 
+        }
+
+        private void tbValor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(tbValor.Text.Contains(","))
+            {
+                if ((!char.IsNumber(e.KeyChar) && !(e.KeyChar == 8)) || (e.Equals(Keys.Control)))
+                {
+                    e.Handled = true;
+                } 
+            }
+            
+            if ((!char.IsNumber(e.KeyChar) && !(e.KeyChar == ',') && !(e.KeyChar == 8)) || (e.Equals(Keys.Control)))
+            {
+                e.Handled = true;
+            } 
+        }
     }
 }
         
